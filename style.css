@@ -111,3 +111,51 @@ footer {
     transform: translateY(0);
   }
 }
+/* Add this to your style.css or in a <style> block */
+
+.publications {
+  list-style: none;        /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  max-width: 300px;        /* Optional: limit the list width */
+}
+
+.publications li {
+  background: #eee;        /* Light gray background */
+  margin: 8px 0;           /* Spacing between items */
+  padding: 8px 12px;
+  border-radius: 6px;      /* Rounded corners */
+  transition: background 0.3s ease;
+  position: relative;      /* For optional icon or pseudo-element */
+}
+
+.publications li:hover {
+  background: #d4d4d4;     /* Darker gray on hover */
+}
+
+/* Link styling */
+.publications li a {
+  color: #34568B;          /* Match your site’s color theme */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.publications li a:hover {
+  color: #12284C;          /* Slight color change on hover */
+  text-decoration: underline;
+}
+
+/* Optional: Add an icon before each list item using a pseudo-element */
+.publications li::before {
+  content: "📄";           /* Emoji or icon symbol of your choice */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+
+
