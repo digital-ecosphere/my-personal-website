@@ -1,15 +1,22 @@
-/* Make the site fill the screen width but still responsive */
+/* style.css */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body: full width with a light background */
 body {
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  background: #f9f9f9; 
   color: #333;
-  /* max-width: 900px;   <-- REMOVE or comment out for full width
-  margin: 0 auto;       <-- If you remove max-width, you can remove auto margin */
   margin: 0;
   padding: 0;
 }
 
-/* Full-width gradient nav bar */
+/* Navigation Bar */
 nav {
   width: 100%;
   background: linear-gradient(to right, #ff7f50, #1e90ff);
@@ -17,11 +24,12 @@ nav {
   text-align: center;
 }
 
+/* Navigation Links */
 nav a {
   display: inline-block;
   margin: 0 1rem;
   text-decoration: none;
-  color: #fff;
+  color: #fff; 
   font-weight: bold;
 }
 
@@ -29,7 +37,29 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Mobile-friendly nav: stack links if screen < 600px */
+/* Heading (H1) Style */
+h1 {
+  margin: 1rem 0;
+  text-align: center;
+  color: #ff7f50; /* or pick any color you like */
+}
+
+/* Section Style */
+section {
+  margin: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  color: #888;
+}
+
+/* Responsive Navigation for Mobile Screens */
 @media (max-width: 600px) {
   nav a {
     display: block;
