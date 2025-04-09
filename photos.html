@@ -2,11 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photos</title>
+  <title>My Photo Gallery</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic styling for the gallery container */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px; /* Adjust to fit your layout */
+      margin: 40px auto; /* Centers the gallery in the page */
+      padding: 0 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Hover animation: slight zoom + dim */
+    .gallery img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
@@ -17,20 +43,17 @@
     <a href="social_media.html">Social Media</a>
   </nav>
 
-  <h1>Photos</h1>
-  <section>
-    <p>Insert images or a gallery of your work, travels, or hobbies:</p>
-    <img src="https://via.placeholder.com/300" alt="Sample Photo" style="max-width:100%;height:auto;">
-    <p>Caption or description.</p>
+  <h1 style="text-align:center;">My Photo Gallery</h1>
 
-    <!-- Add more images as you wish -->
-    <img src="https://via.placeholder.com/300" alt="Sample Photo 2" style="max-width:100%;height:auto;">
-    <p>Another description.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
+  <!-- Responsive Photo Gallery -->
+  <div class="gallery">
+    <!-- Replace these src URLs with your own raw GitHub links -->
+    <img src="https://raw.githubusercontent.com/YourUsername/YourRepo/main/images/photo1.jpg" alt="Photo 1">
+    <img src="https://raw.githubusercontent.com/YourUsername/YourRepo/main/images/photo2.jpg" alt="Photo 2">
+    <img src="https://raw.githubusercontent.com/YourUsername/YourRepo/main/images/photo3.jpg" alt="Photo 3">
+    <img src="https://raw.githubusercontent.com/YourUsername/YourRepo/main/images/photo4.jpg" alt="Photo 4">
+    <img src="https://raw.githubusercontent.com/YourUsername/YourRepo/main/images/photo5.jpg" alt="Photo 5">
+  </div>
 
 </body>
 </html>
