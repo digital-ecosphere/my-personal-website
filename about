@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="publications.html">Publications</a>
+    <a href="photos.html">Photos</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>About Me</h1>
+  <section>
+    <p>Introduce yourself here: your background, current role, interests, or anything you'd like to share.</p>
+    <p>Example: I'm a researcher focused on environmental technology. I love exploring new AI techniques, presenting at conferences, and mentoring students. Outside of work, I enjoy photography, hiking, and reading sci-fi.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+
+</body>
+</html>
