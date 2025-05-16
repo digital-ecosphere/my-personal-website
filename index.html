@@ -1,3 +1,6 @@
+<!-- ============================
+     index.html (revised)
+     ============================ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,20 @@
   <title>Personal Website of Dr. Ram C. Sharma</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!-- Inline helper styles – move these rules into style.css on your next edit -->
+  <style>
+    .intro-flex {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .intro-flex img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 
@@ -23,7 +40,11 @@
 
   <!-- Intro Section -->
   <section class="intro">
-    <p><strong>Hello, dear!</strong> Welcome to my personal website. Explore the links above to learn more about me, my works, and how to get in touch.</p>
+    <div class="intro-flex">
+      <!-- *** Inserted profile photo (left‑aligned) *** -->
+      <img src="https://raw.githubusercontent.com/digital-ecosphere/my-personal-website/main/2.jpg" alt="Photo 2">
+      <p><strong>Hello, dear!</strong> Welcome to my personal website. Explore the links above to learn more about me, my works, and how to get in touch.</p>
+    </div>
   </section>
 
   <!-- Open Special Issues Section -->
@@ -90,6 +111,104 @@
     </p>
   </section>
 
+  <footer>
+    <p>&copy; 2025 Dr. Ram C. Sharma</p>
+  </footer>
+
+</body>
+</html>
+
+<!-- ============================
+     about.html (revised)
+     ============================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Same helper styles as index; extract to CSS file when ready -->
+  <style>
+    .intro-flex {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .intro-flex img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="publications.html">Peer-Review Publications</a>
+    <a href="reviews.html">Peer-Reviews</a>
+    <a href="editor.html">Journal Editorships</a>
+    <a href="photos.html">Photo Gallery </a>
+    <a href="social_media.html">Social Media</a>
+  </nav>
+
+  <h1>About Me</h1>
+
+  <!-- Main About Section -->
+  <section class="intro">
+    <div class="intro-flex">
+      <!-- *** Inserted profile photo (left‑aligned) *** -->
+      <img src="https://raw.githubusercontent.com/digital-ecosphere/my-personal-website/main/2.jpg" alt="Photo 2">
+      <div>
+        <h2>Born in the Himalayas</h2>
+        <p>
+          I was naturally drawn to the intricate balance of nature and the wisdom it holds. 
+          Trained as a forester and ecologist, I specialize in remote sensing, utilizing advanced 
+          geospatial technologies to understand landscapes, environmental changes, and ecosystem 
+          dynamics. My expertise extends into artificial intelligence, where I integrate AI-driven 
+          insights to enhance environmental monitoring, conservation, and sustainable resource 
+          management.
+        </p>
+        <p>
+          Beyond my scientific pursuits, my journey is deeply rooted in spirituality. Coming from 
+          a Hindu family tradition, I have embraced the wisdom of multiple faiths—Christianity, 
+          Buddhism, and Islam—finding harmony in their shared values of compassion, mindfulness, 
+          service, and devotion to the Divine. To me, science and spirituality are not opposing 
+          forces but complementary perspectives that guide my work and my worldview. Whether studying 
+          the forests from above through remote sensing or seeking deeper truths through faith, I 
+          strive to bridge knowledge and wisdom for a more sustainable and meaningful future.
+        </p>
+      </div>
+    </div>
+
+    <h2>Science Meets Spirituality</h2>
+    <p>
+      Rooted in Hinduism as my family tradition, I have grown to embrace the wisdom and spiritual 
+      depth of Christianity, Buddhism, and Islam, seeing them not as contradictions but as different 
+      paths toward understanding the Divine. From Hinduism, I inherit a deep sense of devotion 
+      (Bhakti), the philosophy of unity (Advaita), and the sacred connection between the self and 
+      the universe. In Christianity, I find the call to love, grace, and selfless service, which 
+      align with the principles of dharma. In Buddhism, the practice of mindfulness and inner peace 
+      guides me toward self-discipline and compassion. In Islam, I embrace the profound surrender 
+      to the One God (Tawhid), the importance of justice, and the call to live a righteous life.
+    </p>
+    <p>
+      Rather than viewing these traditions as separate, I see them as different expressions of the 
+      same eternal truth—leading toward a life of faith, wisdom, and harmony. Across these traditions, 
+      I find inspiration in sacred words and prayers that uplift the soul. These powerful mantras, 
+      verses, and supplications remind me of the divine presence in every moment of life.
+    </p>
+  </section>
+
+  <!-- Spiritual Traditions & Prayers -->
+  <section class="intro" style="margin-top: 20px;">
+    <h2>My Spiritual Inspirations</h2>
+    <!--  … rest of the original about.html content unchanged … -->
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Dr. Ram C. Sharma</p>
   </footer>
