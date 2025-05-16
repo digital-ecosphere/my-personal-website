@@ -2,11 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Me</title>
+  <title>Personal Website of Dr. Ram C. Sharma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!-- quick utility for the intro photo layout; move to style.css if preferred -->
+  <style>
+    .intro-flex {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    .intro-flex img {
+      max-width: 220px;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation Bar (appears once) -->
+
+  <!-- Navigation Bar (site‑wide) -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
@@ -17,34 +33,59 @@
     <a href="social_media.html">Social Media</a>
   </nav>
 
-  <h1>About Me</h1>
+  <h1>Welcome to the personal website of Dr. Ram C. Sharma</h1>
 
-  <!-- Personal Overview -->
-  <section class="intro">
-    <h2>Born in the Himalayas</h2>
-    <p>I grew up amid the Himalayan forests, trained as a forester and remote‑sensing ecologist, and now apply AI‑driven geospatial tools to monitor and protect our planet.</p>
-    <p>My approach blends rigorous science with spiritual reflection, guided by respect for creation and a commitment to sustainable stewardship.</p>
-
-    <h2>Science & Spirituality</h2>
-    <p>I explore how data‑driven insight and faith can work together to promote environmental justice and human well‑being.</p>
+  <!-- Intro Section (portrait left, text right) -->
+  <section class="intro intro-flex">
+    <img src="https://raw.githubusercontent.com/digital-ecosphere/my-personal-website/main/2.jpg"
+         alt="Dr. Ram C. Sharma — portrait">
+    <p><strong>Hello, dear!</strong> Welcome to my personal website. Explore the links above to learn more about me, my works, and how to get in touch.</p>
   </section>
 
-  <!-- Spiritual Inspirations (concise, no duplicates) -->
-  <section class="intro" style="margin-top:20px;">
-    <h2>Spiritual Inspiration</h2>
-    <ul>
-      <li><strong>Surah Al‑Fatiha</strong> – Opening chapter; a daily call for mercy and guidance.</li>
-      <li><strong>Shahada</strong> – Core declaration of faith.</li>
-      <li><strong>Ayat‑ul‑Kursi</strong> – Verse of divine guardianship and protection.</li>
-    </ul>
-
-    <h3>Interfaith Reflection</h3>
-    <p>For me, these sacred words are a bridge between traditions—reminders of divine love, wisdom, and peace. Whether in the Vedic hymns, the Psalms, the Buddha’s teachings, or the Quranic verses, I find a universal call to truth, righteousness, and devotion. My spiritual journey is not about choosing one over another, but about deepening my connection with the Divine in all its expressions.</p>
+  <!-- Open Special Issues Section -->
+  <section style="padding: 20px; text-align: center;">
+    <h2>Open Special Issues</h2>
+    <p>
+      <a href="https://www.mdpi.com/journal/ecologies/special_issues/VI2K4127UU" target="_blank">
+        Ecologies – “Plant Communities: Identification, Monitoring and Evaluation of Temporal Dynamics”
+      </a>
+    </p>
+    <p>
+      <a href="https://www.mdpi.com/journal/applsci/special_issues/811GF10WN0" target="_blank">
+        Applied Sciences – “AI‑Enhanced 4D Geospatial Monitoring for Healthy and Resilient Cities”
+      </a>
+    </p>
+    <p>
+      <a href="https://www.mdpi.com/journal/sensors/special_issues/E1OXVV689C" target="_blank">
+        Sensors – “Advancing Land Monitoring through Synergistic Harmonization of Optical, Radar and Lidar Satellite Technologies”
+      </a>
+    </p>
   </section>
 
-  <!-- Footer (appears once) -->
+  <!-- Editorial Board Membership -->
+  <section style="padding: 20px; text-align: center;">
+    <h2>Editorial Board Membership</h2>
+    <p>
+      <em>International Journal of Digital Earth (IJDE)</em> —
+      <a href="https://www.tandfonline.com/journals/tjde20" target="_blank">
+        https://www.tandfonline.com/journals/tjde20
+      </a>
+    </p>
+    <p><em>International Journal of Digital Earth</em> focuses on the theories, technologies, applications and societal implications of Digital Earth.</p>
+    <p>It is the official journal of the International Society for Digital Earth.</p>
+    <p>The journal responds to the Digital Earth initiative and its aim to improve social conditions, protect the environment, and support future sustainable development.</p>
+  </section>
+
+  <!-- Contact Section (unchanged) -->
+  <section class="contact" style="text-align: center; padding-bottom: 30px;">
+    <p style="font-size: 1.3em; font-weight: bold;">Dr. Ram C. Sharma (BSc, MS, PhD)</p>
+    <p>Greater Tokyo Area, Japan</p>
+    <p>Email: <a href="mailto:ramc-sharma@digital-ecosphere.org">ramc-sharma@digital-ecosphere.org</a></p>
+  </section>
+
   <footer>
     <p>&copy; 2025 Dr. Ram C. Sharma</p>
   </footer>
+
 </body>
 </html>
